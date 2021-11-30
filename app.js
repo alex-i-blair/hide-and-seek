@@ -19,8 +19,6 @@ const hidingPlaces = [
 let correctGuesses = 0;
 let totalGuesses = 0;
 
-<<<<<<< Updated upstream
-=======
 shedButton.addEventListener('click', () => {
     // should get a random item to call the 'correct spot'
     let ranItem = getRandomItem(hidingPlaces);
@@ -42,7 +40,6 @@ boulderButton.addEventListener('click', () => {
     // then use that correct spot to 'handle the guess' using the handleGuess function
 });
 
->>>>>>> Stashed changes
 function getRandomItem(arr) {
     const index = Math.floor(Math.random() * arr.length);
 
@@ -67,7 +64,6 @@ function handleGuess(userGuess, correctSpot) {
 
     // then if the user guess is correct, increment the correct guesses
 
-<<<<<<< Updated upstream
     // update the DOM to show this change to the user (including the losses, not tracked directly in state)
 }
 
@@ -92,6 +88,4 @@ boulderButton.addEventListener('click', () => {
 
     // then use that correct spot to 'handle the guess' using the handleGuess function
 });
-=======
 }
->>>>>>> Stashed changes

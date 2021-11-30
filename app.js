@@ -9,6 +9,7 @@ const boulderContainer = document.getElementById('boulder-container');
 
 const totalEl = document.getElementById('total');
 const winsEl = document.getElementById('wins');
+const lossesEl = document.getElementById('losses');
 
 // initialize state
 const hidingPlaces = [
@@ -47,7 +48,6 @@ function handleGuess(userGuess, correctSpot) {
     // update the DOM to show this change to the user (including the losses, not tracked directly in state)
     totalEl.textContent = totalGuesses;
     winsEl.textContent = correctGuesses;
-    let lossesEl = document.getElementById('losses');
     lossesEl.textContent = totalGuesses - correctGuesses;
 
 }
